@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Pierwszy projekt springowy</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1>Przedstaw się ładnie:</h1>
+        <form action="/hello" method="post">
+            Imię: <input type="text" name="imie" />
+            Wiek: <input type="number" name="wiek" />
+            <input type="submit" value="Wyślij" />
+        </form>
+        <br />
+        <h1>Kalkulator zadanie 1</h1>
+        <form action="/wynikdodawania" method="post">
+            x: <input type="number" name="x" />
+            y: <input type="number" name="y" />
+            <input type="submit" value="Dodaj" />
+        </form>
+        <br />
+        <h1>Kalkulator zadanie 2</h1>
+        <form action="/wynikzad2" method="post">
+            <div>
+                Dodawanie <input type="radio" name="operacja" value="+" />
+                <br />
+                Odejmowanie <input type="radio" name="operacja" value="-" /> 
+                <br />
+                Mnożenie <input type="radio" name="operacja" value="*" />
+                <br />
+            </div>
+            x: <input type="number" name="x" />
+            y: <input type="number" name="y" />
+            <input type="submit" value="Oblicz" />
+        </form>
+        <br />
+        <h1>Kalkulator zadanie 3</h1>
+        <form action="/wynikzad3" method="post">
+            <div>
+                Dodawanie <input type="radio" name="operacja" value="+" />
+                <br />
+                Odejmowanie <input type="radio" name="operacja" value="-" /> 
+                <br />
+                Mnożenie <input type="radio" name="operacja" value="*" />
+                <br />
+            </div>
+            x: <input type="number" name="x" />
+            y: <input type="number" name="y" />
+            <input type="submit" value="Oblicz" />
+        </form>
+    </body>
+</html>
